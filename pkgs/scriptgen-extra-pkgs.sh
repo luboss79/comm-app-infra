@@ -1,4 +1,6 @@
 #!/bin/bash
+echo "#!/bin/bash" > linux-extra-pkgs.sh
+
 epel_pkgs=$(yum list installed | grep @epel | grep -v nagios | awk '{print $1}' | awk 'BEGIN { ORS = " " } { print }')
 remi_pkgs=$(yum list installed | grep @remi | awk '{print $1}' | awk 'BEGIN { ORS = " " } { print }')
 percona_pkgs=$(yum list installed | grep @percona | awk '{print $1}' | awk 'BEGIN { ORS = " " } { print }')
