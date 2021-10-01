@@ -15,4 +15,5 @@ cd ../05_iptables/
 cd ../06_crontab/
 ./get-crontab-file.sh
 
-
+cd ../07_services/
+./get-systemd-services.sh
