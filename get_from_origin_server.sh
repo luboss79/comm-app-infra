@@ -17,3 +17,6 @@ cd ../06_crontab/
 
 cd ../07_services/
 ./get-systemd-services.sh
+
+cd ../08_sudoers/
+./get-sudo-file.sh
