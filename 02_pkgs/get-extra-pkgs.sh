@@ -22,3 +22,6 @@ echo "sudo yum install -y $influxdb_pkgs" >> install-extra-pkgs.sh
 # IUS - mongodb
 echo "sudo yum install -y $ius_pkgs" >> install-extra-pkgs.sh
 
+sudo sed -i s/.i686//g install-extra-pkgs.sh
+
+chmod +x install-extra-pkgs.sh
