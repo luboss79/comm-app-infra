@@ -4,6 +4,6 @@ az deployment group create --resource-group CommanderGroup --template-file templ
 az vm extension set \
     --publisher Microsoft.Azure.ActiveDirectory \
     --name AADSSHLoginForLinux \
-    --resource-group CommanderGroup \
-    --vm-name commander01
+    --resource-group ci-v2-poc \
+    --vm-name pkthublb01
 
