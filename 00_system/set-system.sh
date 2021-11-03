@@ -3,6 +3,11 @@
 # timezone UTC
 sudo timedatectl set-timezone UTC
 
+# chrony
+sudo yum install chrony -y
+sudo systemctl start chronyd
+sudo systemctl enable chronyd
+
 # SELinux
 sudo setenforce 0
 sudo sed -i s/SELINUX=enforcing/SELINUX=permissive/g /etc/selinux/config
